@@ -162,9 +162,9 @@ function adminEntry(){ADMIN?openPanel():login()}
     if(r.config){cfg=Object.assign(cfg,r.config);render()}
     ADMIN=!!r.admin;
   }catch(err){}
-  if(ADMIN)showFab();else if(location.hash==='#admin')login();
+  if(ADMIN)showFab();else if(location.hash.toLowerCase()==='#admin')login();
 })();
-addEventListener('hashchange',()=>{if(location.hash==='#admin'&&!ADMIN)login()});
+addEventListener('hashchange',()=>{if(location.hash.toLowerCase()==='#admin'&&!ADMIN)login()});
 async function shrink(f){
   if(f.size<1.5e6||!/^image\/(jpeg|png|webp)$/.test(f.type))return f;
   try{const bm=await createImageBitmap(f),s=Math.min(1,1800/Math.max(bm.width,bm.height)),c=document.createElement('canvas');c.width=Math.round(bm.width*s);c.height=Math.round(bm.height*s);c.getContext('2d').drawImage(bm,0,0,c.width,c.height);const t=f.type==='image/png'?'image/png':'image/jpeg';return await new Promise(r=>c.toBlob(b=>r(b||f),t,.85))}catch(x){return f}
