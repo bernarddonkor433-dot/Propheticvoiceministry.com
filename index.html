@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en" data-border="round"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Prophetic Voice Ministries</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&amp;family=Montserrat:wght@400;600&amp;family=Playfair+Display:wght@500;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7faf6;--card:#fff;--ink:#1d2a1f;--mute:#5b6b5e;--line:#d9e4da;--accent:#1b7a2e;--font:'Poppins',system-ui,sans-serif;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101712;--card:#18221a;--ink:#e8f1e9;--mute:#9fb2a2;--line:#2b3b2e;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101712;--card:#18221a;--ink:#e8f1e9;--mute:#9fb2a2;--line:#2b3b2e;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.6}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.1;background:var(--logo) center/min(75vw,560px) no-repeat}
+img,video{max-width:100%}
+header{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 16px;padding:8px 20px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+header img{width:54px;height:54px;border-radius:50%;object-fit:cover}
+header b{font-size:17px;line-height:1.2;color:var(--accent)}
+nav{position:absolute;top:calc(100% + 6px);right:14px;min-width:230px;display:none;flex-direction:column;gap:2px;padding:10px;background:var(--card);border:2px solid var(--gold);border-radius:12px;box-shadow:0 14px 34px rgba(0,0,0,.25);font-size:15px}
+nav.open{display:flex;animation:navin .3s ease}
+@keyframes navin{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+nav a{color:var(--ink);text-decoration:none;padding:10px 14px;border-radius:8px;transition:background .25s,padding .25s}
+nav a:hover{background:rgba(27,122,46,.13);color:var(--accent);padding-left:20px}
+.brand{flex:1}
+.menu-btn{background:var(--accent);color:#fff;border:0;border-radius:999px;padding:10px 18px;font:inherit;font-weight:600;font-size:14px;cursor:pointer;white-space:nowrap}
+.menu-btn:hover{filter:brightness(1.12)}
+.hero{min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;padding:48px 20px;background:linear-gradient(rgba(10,50,20,.55),rgba(10,50,20,.75)),var(--wall,linear-gradient(135deg,#1b7a2e,#0d3d17));background-size:cover;background-position:center 20%}
+.hero img{width:150px;height:150px;border-radius:50%;object-fit:cover;box-shadow:0 6px 24px rgba(0,0,0,.4)}
+.hero h1{font-size:clamp(28px,6vw,48px);margin:18px 0 6px}
+.hero p{max-width:560px;margin:0 0 22px;opacity:.95}
+.btn{display:inline-block;background:var(--accent);color:#fff;border:0;padding:11px 22px;border-radius:999px;font:inherit;font-weight:600;text-decoration:none;cursor:pointer}
+.btn.alt{background:#fff;color:#14521f;margin-left:8px}
+section{max-width:1000px;margin:0 auto;padding:48px 20px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+
+.card h3{margin:0 0 6px;font-size:17px}
+.card p{margin:0;color:var(--mute);font-size:14px}
+.times .row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.gal>*{width:100%;height:180px;object-fit:cover;border:var(--bw,1px) var(--bs,solid) var(--accent);border-radius:var(--br,14px);background:#000}
+@media (prefers-reduced-motion:no-preference){
+.fx{opacity:0;transform:translateY(46px);transition:opacity 1.6s ease,transform 1.6s ease}
+.fx.in{opacity:1;transform:none}
+.fx.up{transform:translateY(-46px)}
+.hero img{animation:bob 8s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px)}}
+.card{transition:transform .6s ease,box-shadow .6s ease}.card:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(0,0,0,.15)}
+}
+:root{--gold:#c9a227}
+h2{font-size:clamp(26px,4.5vw,36px);margin:0 0 18px;color:var(--ink);line-height:1.2;font-weight:700}
+.eye{display:inline-block;font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--accent);margin-bottom:8px;padding-left:34px;position:relative}
+.eye::before{content:"";position:absolute;left:0;top:50%;width:24px;height:2px;background:var(--gold)}
+.hl{background:linear-gradient(90deg,var(--accent),var(--gold)) no-repeat left bottom;background-size:0 4px;transition:background-size 1.4s ease .3s;padding:0 0 8px;display:inline-block}
+.fx.in .hl{background-size:100% 4px}
+@media (prefers-reduced-motion:reduce){.hl{background-size:100% 4px}}
+.lead{font-size:18px;border-left:4px solid var(--gold);padding:4px 0 4px 18px;margin:0}
+.lead::first-letter{font-size:2.6em;font-weight:700;color:var(--accent);float:left;line-height:.9;margin:4px 8px 0 0}
+section:nth-of-type(even){box-shadow:0 0 0 100vmax rgba(27,122,46,.07);clip-path:inset(0 -100vmax)}
+.card{background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(135deg,var(--accent),var(--gold),var(--accent)) border-box;padding:20px;border:max(var(--bw,2px),2px) solid transparent;border-radius:var(--br,14px);box-shadow:0 4px 14px rgba(0,0,0,.07)}
+.grid{counter-reset:c}
+.grid .card{counter-increment:c;position:relative}
+.grid .card::before{content:counter(c,decimal-leading-zero);position:absolute;right:14px;top:6px;font-size:34px;font-weight:700;color:var(--gold);opacity:.4}
+.times .row span{background:rgba(27,122,46,.13);color:var(--accent);padding:2px 14px;border-radius:999px;font-weight:600;font-size:14px;white-space:nowrap}
+.times .row{transition:background .4s,padding .4s}.times .row:hover{background:rgba(201,162,39,.13);padding-left:10px}
+.pf input:focus,.pf textarea:focus{outline:2px solid var(--gold)}
+section.verse{max-width:none;background:linear-gradient(135deg,#0d3d17,#1b7a2e);color:#fff;text-align:center;box-shadow:none;clip-path:none;padding:64px 20px}
+.verse::before{content:"\201C";display:block;font:700 80px/.6 Georgia,serif;color:var(--gold)}
+.verse p{max-width:760px;margin:0 auto 14px;font:italic 600 clamp(20px,3.6vw,30px)/1.5 Georgia,serif}
+.verse cite{color:#f0d77a;letter-spacing:.15em;text-transform:uppercase;font-size:13px;font-style:normal}
+@media (prefers-reduced-motion:no-preference){
+@keyframes rise{from{opacity:0;transform:translateY(26px) scale(.96)}to{opacity:1;transform:none}}
+.fx.in .grid .card,.fx.in .times .row{animation:rise .9s ease backwards}
+.fx.in .grid .card:nth-child(2),.fx.in .times .row:nth-child(2){animation-delay:.15s}
+.fx.in .grid .card:nth-child(3),.fx.in .times .row:nth-child(3){animation-delay:.3s}
+.fx.in .grid .card:nth-child(4){animation-delay:.45s}
+.fx.in .verse p{animation:rise 1.4s ease .2s backwards}
+}
+footer{border-top:3px solid var(--gold);background:#0d3d17;color:#dfeee2;text-align:center;padding:28px 16px;font-size:14px}
+[data-border="sharp"]{--br:0px;--bw:2px}
+[data-border="round"]{--br:14px;--bw:1px}
+[data-border="pill"]{--br:28px;--bw:2px}
+[data-border="double"]{--br:6px;--bw:5px;--bs:double}
+[data-border="none"]{--br:10px;--bw:0px}
+#fab{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:20}
+#panel{position:fixed;inset:0 0 0 auto;width:min(380px,100%);background:var(--card);color:var(--ink);z-index:30;overflow:auto;padding:16px;border-left:1px solid var(--line);box-shadow:-8px 0 30px rgba(0,0,0,.25)}
+#panel h4{margin:16px 0 6px;color:var(--accent)}
+#panel label{display:block;font-size:12px;color:var(--mute);margin-top:8px}
+#panel input[type=text],#panel textarea,#panel select{width:100%;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;font-size:14px}
+#panel textarea{min-height:70px}
+.pf{display:grid;gap:10px}.pf input,.pf textarea{padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}.pf textarea{min-height:100px}
+.mini{display:flex;gap:8px;align-items:center;font-size:12px;margin:4px 0}
+.mini button{margin-left:auto}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<div id="admin"></div>
+<script id="cfg" type="application/json">{"events": "", "sermons": "", "giving": "", "prayerEmail": "", "name": "The Prophetic Voice Ministries", "tagline": "YOU'RE WELCOME TO THE PROPHETIC VOICE MINISTRIES,\nA people of faith, fire and purpose. Come as you are and encounter God.", "logo": "/logo.webp", "hero": "/pastor.jpg", "font": "Montserrat", "accent": "#1b7a2e", "border": "sharp", "about": "We are a Bible-believing family devoted to hearing and declaring the voice of God to our generation. Everyone is welcome here.", "times": "WEEKLY CHURCH ACTIVITIES \n\nSunday Worship | Youth service 8:00 AM - 9:50 AM\n\n                                  Main Service 10:00 AM - 11:00 AM\n\nTuesday service |  6:30 PM - 8:30 PM\n\nThursday service | 8:00 PM - 10:00 PM", "ministries": "Worship | Join us in praise and worship.\n\nBible Study | Grow deeper in the Word.\n\nPrayer | Stand with us in intercession.\n\nYouth | Raising the next generation.\n", "gallery": [], "contact": "Your church address here\n+000 000 000 000\ninfo@yourchurch.org", "custom": [{"title": "THE MINISTRY OF BLESSED GENERATION YOUTH ", "text": "Our Response: \"We are called to serve\"\n"}, {"title": "THE MINISTRY OF MEN SOCIETY ", "text": "Write here..."}, {"title": "THE MINISTRY OF WOMEN SOCIETY ", "text": "Write here..."}, {"title": "THE MINISTRY OF SUNDAY SCHOOL ", "text": "Write here..."}]}</script>
+<script>
+let cfg=Object.assign({events:'',sermons:'',giving:'',prayerEmail:'',verse:'For where two or three are gathered together in my name, there am I in the midst of them. | Matthew 18:20'},JSON.parse(document.getElementById('cfg').textContent));
+const vid=u=>{const y=u.match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/);if(y)return`<iframe loading="lazy" allowfullscreen src="https://www.youtube.com/embed/${y[1]}"></iframe>`;if(/facebook\.com|fb\.watch/.test(u))return`<iframe loading="lazy" allowfullscreen src="https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(u)}"></iframe>`;return`<video controls preload="metadata" src="${e(u)}"></video>`};
+const safe=u=>/^https?:\/\//i.test(u||'')?u:'';
+function pray(f){const m=cfg.prayerEmail||(cfg.contact.match(/\S+@\S+\.\S+/)||[''])[0];if(!m){alert('Prayer email is not set yet.');return false}location.href='mailto:'+m+'?subject='+encodeURIComponent('Prayer request')+'&body='+encodeURIComponent('Name: '+f.n.value+'\n\n'+f.r.value);return false}
+const $=s=>document.querySelector(s);
+const e=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const lines=t=>String(t||'').split('\n').map(x=>x.trim()).filter(Boolean);
+const pair=l=>{const i=l.indexOf('|');return i<0?[l,'']:[l.slice(0,i).trim(),l.slice(i+1).trim()]};
+const FONTS={'Poppins':"'Poppins',system-ui,sans-serif",'Lora':"'Lora',Georgia,serif",'Playfair Display':"'Playfair Display',Georgia,serif",'Montserrat':"'Montserrat',system-ui,sans-serif",'Classic Serif':"Georgia,'Times New Roman',serif"};
+function toggleNav(f){const n=document.getElementById('nav'),b=document.getElementById('mb');if(!n||!b)return;const o=f===undefined?!n.classList.contains('open'):f;n.classList.toggle('open',o);b.setAttribute('aria-expanded',o);b.textContent=o?'\u2715 Close':'\u2630 Menu'}
+document.addEventListener('click',ev=>{if(!ev.target.closest('header'))toggleNav(false)});
+document.addEventListener('keydown',ev=>{if(ev.key==='Escape')toggleNav(false)});
+function render(){
+  const d=document.documentElement;
+  d.style.setProperty('--accent',cfg.accent);
+  d.style.setProperty('--font',FONTS[cfg.font]||FONTS.Poppins);
+  d.setAttribute('data-border',cfg.border);
+  d.style.setProperty('--logo','url("'+cfg.logo+'")');
+  const wall=cfg.hero?`style="--wall:url('${e(cfg.hero)}')"`:'';
+  const cust=cfg.custom.map((c,i)=>`<section id="x${i}"><span class="eye">More</span><h2><span class="hl">${e(c.title)}</span></h2><p>${e(c.text)}</p></section>`).join('');
+  const gal=cfg.gallery.map(g=>g.type==='video'?vid(g.url):`<img loading="lazy" alt="Church photo" src="${e(g.url)}">`).join('');
+  const c=lines(cfg.contact);
+  $('#root').innerHTML=`
+<header><div class="brand"><img src="${e(cfg.logo)}" alt="Logo"><b>${e(cfg.name)}</b></div>
+<button class="menu-btn" id="mb" aria-expanded="false" aria-controls="nav" onclick="toggleNav()">\u2630 Menu</button><nav id="nav" onclick="toggleNav(false)"><a href="#about">About</a><a href="#times">Services</a><a href="#ministries">Ministries</a>${lines(cfg.events).length?'<a href="#events">Events</a>':''}${lines(cfg.sermons).length?'<a href="#sermons">Sermons</a>':''}${lines(cfg.giving).length?'<a href="#giving">Giving</a>':''}<a href="#prayer">Prayer</a>${gal?'<a href="#gallery">Gallery</a>':''}${cfg.custom.map((x,i)=>`<a href="#x${i}">${e(x.title)}</a>`).join('')}<a href="#contact">Contact</a></nav></header>
+<div class="hero" ${wall}><img src="${e(cfg.logo)}" alt="${e(cfg.name)} logo"><h1>${e(cfg.name)}</h1><p>${e(cfg.tagline)}</p><div><a class="btn" href="#times">Join a Service</a><a class="btn alt" href="#contact">Contact Us</a></div></div>
+<section id="about"><span class="eye">Who we are</span><h2><span class="hl">About Us</span></h2><p class="lead">${e(cfg.about)}</p></section>
+<section id="times" class="times"><span class="eye">Join us</span><h2><span class="hl">Service Times</span></h2><div class="card">${lines(cfg.times).map(l=>{const[a,b]=pair(l);return`<div class="row"><b>${e(a)}</b><span>${e(b)}</span></div>`}).join('')}</div></section>
+<section id="ministries"><span class="eye">What we do</span><h2><span class="hl">Our Ministries</span></h2><div class="grid">${lines(cfg.ministries).map(l=>{const[a,b]=pair(l);return`<div class="card"><h3>${e(a)}</h3><p>${e(b)}</p></div>`}).join('')}</div></section>
+${gal?`<section id="gallery"><span class="eye">Moments of grace</span><h2><span class="hl">Gallery</span></h2><div class="gal">${gal}</div></section>`:''}
+${cfg.verse?`<section class="verse"><p>${e(pair(cfg.verse)[0])}</p><cite>${e(pair(cfg.verse)[1])}</cite></section>`:''}
+${lines(cfg.events).length?`<section id="events"><span class="eye">Mark your calendar</span><h2><span class="hl">Upcoming Events</span></h2><div class="grid">${lines(cfg.events).map(l=>{const p=l.split('|').map(x=>x.trim());return`<div class="card"><small style="color:var(--accent);font-weight:600">${e(p[0])}</small><h3>${e(p[1]||'')}</h3><p>${e(p[2]||'')}</p></div>`}).join('')}</div></section>`:''}
+${lines(cfg.sermons).length?`<section id="sermons"><span class="eye">Be fed by the Word</span><h2><span class="hl">Sermons</span></h2><div class="grid">${lines(cfg.sermons).map(l=>{const p=l.split('|').map(x=>x.trim());const u=safe(p[2]);return`<div class="card"><h3>${e(p[0])}</h3><p>${e(p[1]||'')}</p>${u?`<a class="btn" style="margin-top:10px;padding:6px 14px;font-size:13px" target="_blank" rel="noopener" href="${e(u)}">Watch / Listen</a>`:''}</div>`}).join('')}</div></section>`:''}
+${lines(cfg.giving).length?`<section id="giving"><span class="eye">Sow a seed</span><h2><span class="hl">Give</span></h2><p>Thank you for sowing into the work of God.</p><div class="card">${lines(cfg.giving).map(x=>`<div>${e(x)}</div>`).join('')}</div></section>`:''}
+<section id="prayer"><span class="eye">We stand with you</span><h2><span class="hl">Prayer Request</span></h2><form class="card pf" onsubmit="return pray(this)"><input name="n" placeholder="Your name" required><textarea name="r" placeholder="How can we pray with you?" required></textarea><button class="btn" type="submit">Send Request</button></form></section>
+${cust}
+<section id="contact"><span class="eye">Get in touch</span><h2><span class="hl">Contact</span></h2><div class="card">${c.map(x=>`<div>${e(x)}</div>`).join('')}</div></section>
+<footer>© ${new Date().getFullYear()} ${e(cfg.name)}. All rights reserved.</footer>`;
+  fx();
+}
+let io;
+function fx(){
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  if(io)io.disconnect();
+  io=new IntersectionObserver(es=>es.forEach(x=>{const t=x.target;if(x.isIntersecting){t.classList.add('in');t.classList.remove('up')}else{t.classList.remove('in');t.classList.toggle('up',x.boundingClientRect.top<0)}}),{threshold:.1});
+  document.querySelectorAll('section,footer').forEach(s=>{s.classList.add('fx');io.observe(s)});
+}
+render();
+
+// ---- Admin (login with password; works on the live site) ----
+let ADMIN=false;
+function showFab(){$('#admin').innerHTML='<button class="btn" id="fab">✎ Admin</button>';$('#fab').onclick=openPanel}
+async function login(){
+  const p=prompt('Admin password');if(!p)return;
+  try{const r=await fetch('/api/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:p})});
+    if(r.ok){ADMIN=true;showFab();openPanel()}else alert(r.status===429?'Too many tries. Wait 15 minutes.':'Wrong password')}catch(x){alert('Could not reach the server')}
+}
+function adminEntry(){ADMIN?openPanel():login()}
+(async()=>{
+  try{const r=await (await fetch('/api/config',{cache:'no-store'})).json();
+    if(r.config){cfg=Object.assign(cfg,r.config);render()}
+    ADMIN=!!r.admin;
+  }catch(err){}
+  if(ADMIN)showFab();else if(location.hash==='#admin')login();
+})();
+addEventListener('hashchange',()=>{if(location.hash==='#admin'&&!ADMIN)login()});
+async function shrink(f){
+  if(f.size<1.5e6||!/^image\/(jpeg|png|webp)$/.test(f.type))return f;
+  try{const bm=await createImageBitmap(f),s=Math.min(1,1800/Math.max(bm.width,bm.height)),c=document.createElement('canvas');c.width=Math.round(bm.width*s);c.height=Math.round(bm.height*s);c.getContext('2d').drawImage(bm,0,0,c.width,c.height);const t=f.type==='image/png'?'image/png':'image/jpeg';return await new Promise(r=>c.toBlob(b=>r(b||f),t,.85))}catch(x){return f}
+}
+async function up(file){
+  const b=await shrink(file);
+  if(b.size>4*1024*1024)throw new Error('image is over 4 MB');
+  const r=await fetch('/api/upload?name='+encodeURIComponent((file.name||'photo').replace(/[^\w.-]/g,'_')),{method:'POST',headers:{'Content-Type':b.type||'image/jpeg'},body:b});
+  if(!r.ok)throw new Error('server said '+r.status);
+  return (await r.json()).url;
+}
+async function videoUp(file){
+  const {upload}=await import('https://esm.sh/@vercel/blob@0.27.3/client');
+  const r=await upload('videos/'+(file.name||'video').replace(/[^\w.-]/g,'_'),file,{access:'public',handleUploadUrl:'/api/video-upload'});
+  return r.url;
+}
+function openPanel(){
+  const f=FONTS,o=(arr,v)=>arr.map(x=>`<option ${x===v?'selected':''}>${x}</option>`).join('');
+  $('#admin').innerHTML=`<div id="panel"><div style="display:flex;align-items:center"><b>Admin Panel</b><button class="btn" style="margin-left:auto;padding:6px 14px" id="close">Close</button></div>
+<h4>Look &amp; Style</h4>
+<label>Church name</label><input type="text" data-k="name" value="${e(cfg.name)}">
+<label>Tagline</label><textarea data-k="tagline">${e(cfg.tagline)}</textarea>
+<label>Font</label><select data-k="font">${o(Object.keys(f),cfg.font)}</select>
+<label>Border style</label><select data-k="border">${o(['round','sharp','pill','double','none'],cfg.border)}</select>
+<label>Theme colour</label><input type="color" data-k="accent" value="${e(cfg.accent)}">
+<label>Change logo</label><input type="file" accept="image/*" id="upLogo">
+<label>Change wallpaper</label><input type="file" accept="image/*" id="upHero"> <button class="btn" style="padding:4px 10px;font-size:12px" id="rmHero">Reset</button>
+<h4>Content</h4>
+<label>About</label><textarea data-k="about">${e(cfg.about)}</textarea>
+<label>Service times (one per line: Name | Time)</label><textarea data-k="times">${e(cfg.times)}</textarea>
+<label>Ministries (one per line: Title | Description)</label><textarea data-k="ministries">${e(cfg.ministries)}</textarea>
+<label>Contact (one line each)</label><textarea data-k="contact">${e(cfg.contact)}</textarea>
+<h4>Events, Sermons, Giving &amp; Prayer</h4>
+<label>Scripture banner (Verse | Reference)</label><textarea data-k="verse">${e(cfg.verse)}</textarea>
+<label>Events (Date | Title | Details)</label><textarea data-k="events">${e(cfg.events)}</textarea>
+<label>Sermons (Title | Speaker | https link to video/audio)</label><textarea data-k="sermons">${e(cfg.sermons)}</textarea>
+<label>Giving details (one per line)</label><textarea data-k="giving">${e(cfg.giving)}</textarea>
+<label>Prayer request email</label><input type="text" data-k="prayerEmail" value="${e(cfg.prayerEmail)}">
+<h4>Gallery (photos &amp; videos)</h4>
+<label>Add photos or videos (videos up to 300 MB)</label><input type="file" accept="image/*,video/*" multiple id="upGal"><label>Or add a video link (YouTube or Facebook)</label><input type="text" id="vidLink" placeholder="https://youtu.be/..."><button class="btn" id="addVid" style="margin-top:6px;padding:6px 14px">Add video</button>
+<div id="galList">${cfg.gallery.map((g,i)=>`<div class="mini">${g.type==='video'?'🎬 Video':'🖼 Photo'} ${i+1}<button class="btn" style="padding:3px 10px;font-size:12px" data-rm="${i}">Remove</button></div>`).join('')}</div>
+<h4>Custom sections (new features)</h4>
+<div id="cust">${cfg.custom.map((c,i)=>`<div class="card" style="margin-top:8px"><input type="text" data-c="${i}" data-f="title" value="${e(c.title)}"><textarea data-c="${i}" data-f="text">${e(c.text)}</textarea><button class="btn" style="padding:3px 10px;font-size:12px" data-rc="${i}">Delete section</button></div>`).join('')}</div>
+<button class="btn" style="margin-top:8px;padding:6px 14px" id="addC">+ Add section</button>
+<div style="margin-top:20px;display:flex;gap:8px"><button class="btn" id="save">Save &amp; Publish</button><button class="btn" id="out" style="background:#777">Log out</button><span id="msg" style="font-size:12px;align-self:center"></span></div></div>`;
+  const msg=t=>$('#msg').textContent=t;
+  $('#close').onclick=()=>{$('#admin').innerHTML='<button class="btn" id="fab">✎ Admin</button>';$('#fab').onclick=openPanel};
+  document.querySelectorAll('[data-k]').forEach(el=>el.oninput=()=>{cfg[el.dataset.k]=el.value;render()});
+  document.querySelectorAll('[data-c]').forEach(el=>el.oninput=()=>{cfg.custom[el.dataset.c][el.dataset.f]=el.value;render()});
+  document.querySelectorAll('[data-rm]').forEach(b=>b.onclick=()=>{cfg.gallery.splice(+b.dataset.rm,1);render();openPanel()});
+  document.querySelectorAll('[data-rc]').forEach(b=>b.onclick=()=>{cfg.custom.splice(+b.dataset.rc,1);render();openPanel()});
+  $('#addC').onclick=()=>{cfg.custom.push({title:'New Section',text:'Write here...'});render();openPanel()};
+  $('#rmHero').onclick=()=>{cfg.hero='';render()};
+  const handle=(id,fn)=>$(id).onchange=async ev=>{try{msg('Uploading...');await fn([...ev.target.files]);render();openPanel();$('#msg').textContent='Uploaded. Remember to save.'}catch(x){msg('Upload failed: '+((x&&(x.message||x.code))||'unknown error'))}};
+  handle('#upLogo',async fs=>{cfg.logo=await up(fs[0])});
+  handle('#upHero',async fs=>{cfg.hero=await up(fs[0])});
+  $('#addVid').onclick=()=>{const u=safe($('#vidLink').value.trim());if(!u){msg('Paste a link that starts with https://');return}cfg.gallery.push({type:'video',url:u});render();openPanel()};
+  handle('#upGal',async fs=>{for(const x of fs){const v=x.type.startsWith('video');cfg.gallery.push({type:v?'video':'image',url:v?await videoUp(x):await up(x)})}});
+  $('#save').onclick=async()=>{
+    try{
+      msg('Saving...');
+      const r=await fetch('/api/config',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(cfg)});
+      if(r.status===401){ADMIN=false;msg('Session ended. Close and log in again.');return}
+      if(!r.ok)throw new Error(r.status);
+      msg('Saved. Your site is updated.');
+    }catch(x){msg('Could not save')}
+  };
+  $('#out').onclick=async()=>{await fetch('/api/login',{method:'DELETE'});ADMIN=false;$('#admin').innerHTML='';location.hash='';};
+
+}
+</script>
+
+
+</body></html>
