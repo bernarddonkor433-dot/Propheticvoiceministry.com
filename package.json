@@ -2,5 +2,5 @@
   "name": "propheticvoiceministry",
   "private": true,
   "type": "module",
-  "dependencies": { "@vercel/blob": "^0.27.0" }
+  "dependencies": { "@vercel/blob": "latest" }
 }
