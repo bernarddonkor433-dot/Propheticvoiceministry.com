@@ -1,0 +1,16 @@
+import { put } from '@vercel/blob';
+import { isAdmin, json } from './_lib.js';
+export default {
+  async fetch(req) {
+    if (!isAdmin(req)) return json({ error: 'Log in at /#admin first, then reload this page' }, 401);
+    const out = {
+      storeId: !!process.env.BLOB_STORE_ID,
+      rwToken: !!process.env.BLOB_READ_WRITE_TOKEN,
+    };
+    for (const access of ['public', 'private']) {
+      try { await put('diag-' + access + '.txt', 'ok', { access, addRandomSuffix: true }); out[access] = 'OK'; }
+      catch (e) { out[access] = String((e && e.message) || e).slice(0, 200); }
+    }
+    return json(out);
+  },
+};
